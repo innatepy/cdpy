@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Playground for slug module</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+		<main>
+			<h1>Playground for slug module</h1>
+			<form id="form" onSubmit="" style="max-width:60ch">
+				<label for="input">Input text</label>
+				<input type="text" id="input" placeholder="An Apple computer" autofocus>
+				<input type="submit" value="Slug it">
+
+				<div>Result: <mark id="slugOutput"></mark></div>
+	
+				<fieldset>
+					<legend>Options</legend>
+					<div>
+						<label for="replacement">Replacement character</label>
+						<input type="text" id="replacement" name="replacement" placeholder="-">
+					</div>
+
+					<div>
+						<label>
+							<input type="checkbox" name="lowercase" checked> Lowercase
+						</label>
+					</div>
+
+					<div>
+						<label>
+							<input type="checkbox" name="trim" checked> Trim leading and trailing replacement characters
+						</label>
+					</div>
+
+					<div>
+						<label>
+							<input type="checkbox" name="fallback" checked> Fallback
+						</label>
+					</div>
+				</fieldset>
+			</form>
+		</main>
+		<script src="./slug.js"></script>
+    <script src="./playground.js"></script>
+  </body>
+</html>
